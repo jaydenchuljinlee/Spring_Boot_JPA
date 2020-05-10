@@ -19,6 +19,9 @@ public class Book {
 
     private String content;
 
+    /*
+    * 양방향 매핑 설정시 반드시 필요
+    * */
     @ManyToOne
     private BookStore bookStore;
 }

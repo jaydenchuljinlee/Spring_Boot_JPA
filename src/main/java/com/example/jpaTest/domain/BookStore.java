@@ -18,6 +18,7 @@ public class BookStore {
     private String name;
 
     @OneToMany(mappedBy = "bookStore")
+    //@JoinColumn(name = "bookStore")//단방향 매핑시 설정
     private Set<Book> books = new HashSet<>();
 
     public void add(Book book) {

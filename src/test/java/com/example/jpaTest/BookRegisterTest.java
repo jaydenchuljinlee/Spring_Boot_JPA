@@ -36,5 +36,6 @@ public class BookRegisterTest {
 
         bookRepository.save(book);
 
+        bookRepository.findAll();
     }
 }
